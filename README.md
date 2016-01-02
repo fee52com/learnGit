@@ -52,6 +52,11 @@
 	git branch -d hotfix1 删除此分支  
 	同样可以合并iss53分支到master  
 	如果合并时发生冲突手工编辑冲突文件后再commit  
+### 协作
+	如果git push失败(别人已经提交内容)
+	git fetch origin 获取服务器最新内容  
+	git merge origin/master 本地合并  
+	git push origin master	推送到服务器  
 ### 本地分支与远程分支
 	git push origin serverfix 让远程分支切换到serverfix，别人
 	git fetch origin 在本地生成一个远程分支 origin/serverfix，指向服务器的serverfix 分支的引用  
