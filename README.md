@@ -7,4 +7,4 @@
 ## git reset HEAD CONTRIBUTING.md 撤销
 ## git push 本地仓库的修改提交到仓库
 
-[https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C][git官方文档]
+ ![https://git-scm.com/book/zh/v2](git官方文档)
