@@ -19,12 +19,12 @@
  * 在某个标签上创建某个分支 git checkout -b version2 v2.0.0  
 
 ## 别名  
-`
-$ git config --global alias.co checkout 用co检出  
-$ git config --global alias.br branch 用br建分支  
-$ git config --global alias.ci commit 用ci提交  
-$ git config --global alias.st status 用st显示状态  
-$ git config --global alias.unstage 'reset HEAD --' 用unstage取消暂存  
-$ git config --global alias.last 'log -1 HEAD' 用last看最后一次提交  
-`
+
+	$ git config --global alias.co checkout 用co检出  
+	$ git config --global alias.br branch 用br建分支  
+	$ git config --global alias.ci commit 用ci提交  
+	$ git config --global alias.st status 用st显示状态  
+	$ git config --global alias.unstage 'reset HEAD --' 用unstage取消暂存  
+	$ git config --global alias.last 'log -1 HEAD' 用last看最后一次提交  
+
 
