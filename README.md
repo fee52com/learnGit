@@ -32,11 +32,14 @@
 
 ## 分支
 	git init 创建master分支
+	git branch -vv 查看分支列表  
 	git branch testing 创建testing分支
 	git checkout testing 切换到testing分支 HEAD随之移动
 	以上命令可以合并成git checkout -b iss53	等同于branch和checkout两句一起使用
 	git checkout master 切换到master分支 HEAD随之移动
 	git log --oneline --decorate --graph --all 查看分支分叉情况
+	git branch --merged 查看merge到当前分支的  
+	git branch --no-merged 查看未merge的分支  
 
 ### 分支的应用场景:    
 	git checkout -b iss53  创建一个分支  
@@ -49,4 +52,17 @@
 	git branch -d hotfix1 删除此分支  
 	同样可以合并iss53分支到master  
 	如果合并时发生冲突手工编辑冲突文件后再commit  
+### 本地分支与远程分支
+	git push origin serverfix 让远程分支切换到serverfix，别人
+	git fetch origin 在本地生成一个远程分支 origin/serverfix，指向服务器的serverfix 分支的引用  
+	可以用git merge origin/serverfix 合并到本地分支
+	git clone跟踪的是master分支 而 git checkout -b [branch] [remotename]/[branch] 可以跟踪指定分支 如果加-u则是跟踪其上游分支
+	git push origin --delete serverfix 删除服务器上的serverfix分支(可恢复)
+	git pull 相当于git getch(并不合并) 与 get merge 的组合
 
+### 变基
+	git checkout experiment  
+	git rebase master 变基,自动找到共同祖先，并将基底指向较近的并且和experiment修改无关的  
+	git checkout master   
+	git merge experiment  
+	更复杂的变基	git rebase master server client(后两个是不同分支)之后再checkoout master 并merge client
