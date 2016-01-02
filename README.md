@@ -1,4 +1,7 @@
 # learnGit
+
+ 参考[git官方文档](https://git-scm.com/book/zh/v2)  
+
 ## 常用操作
 * git clone url 从web下载到本地
 * git commit -r -a "add hello" 提交
