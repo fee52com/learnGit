@@ -38,7 +38,7 @@
 	git checkout master 切换到master分支 HEAD随之移动
 	git log --oneline --decorate --graph --all 查看分支分叉情况
 
-	**分支的应用场景:**    
+### 分支的应用场景:    
 	git checkout -b iss53  创建一个分支  
 	git commit -a -m 'added a new footer [issue 53]'  提交点东西  
 	git checkout master  切换到master分支  
